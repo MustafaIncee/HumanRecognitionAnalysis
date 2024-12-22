@@ -120,9 +120,3 @@ Dive deeper into sequential data analysis with our LSTM model for insights like 
 
 This project is proudly open-source and licensed under the [MIT License](LICENSE). Check out the LICENSE file for more details.
 
----
-
-<div align="center">
-  <p>Made with ❤️ for the future of human recognition</p>
-  <p>© 2024 Human Recognition Analysis Project</p>
-</div>
