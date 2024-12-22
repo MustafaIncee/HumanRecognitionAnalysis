@@ -1,0 +1,20 @@
+./zookeeper-server-start.sh ../config/zookeeper.properties
+
+./kafka-server-start.sh ../config/server.properties
+
+
+./kafka-topics.sh --create --topic sensor_data --bootstrap-server localhost:9092
+./kafka-topics.sh --create --topic anomalies --bootstrap-server localhost:9092
+./kafka-topics.sh --create --topic normal_data --bootstrap-server localhost:9092
+
+./kafka-topics.sh --list --bootstrap-server localhost:9092
+
+
+./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic normal_data --from-beginning
+
+./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic anomalies --from-beginning
+
+
+./spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.3.2 /home/geokdeniz/PycharmProjects/PythonProject1/spark_streaming.py
+
+
