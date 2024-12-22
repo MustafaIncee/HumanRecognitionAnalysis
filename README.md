@@ -89,21 +89,6 @@ Deep Learning
 
 LSTM (Long Short-Term Memory): Used for analyzing sequential data to capture temporal dependencies.
 
-File Structure
-
-├── data
-│   └── dataset.csv
-├── src
-│   ├── preprocessing.py
-│   ├── ml_models.py
-│   ├── lstm_model.py
-│   └── spark_kafka_integration.py
-├── output
-│   └── results.csv
-├── requirements.txt
-├── main.py
-└── README.md
-
 Results
 
 The project evaluates the performance of each model based on metrics such as accuracy, precision, recall, and F1-score. The LSTM model is specifically used for tasks requiring sequential data analysis.
